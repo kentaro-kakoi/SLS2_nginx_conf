@@ -1,0 +1,4 @@
+location ~* xmlrpc\.php$ {
+    log_not_found off;
+    return 403;
+}
