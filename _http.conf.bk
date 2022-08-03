@@ -3,7 +3,8 @@ server {
     listen       80;
     server_name  default_server;
 
-    location / {
+        include /etc/nginx/conf.d/ddos_block;
+	location / {
         root   /usr/share/nginx/html;
         index  index.html index.htm;
     }
